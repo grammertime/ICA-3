@@ -9,6 +9,16 @@ body {
     padding-bottom: 100px;
 }
 
+/* Making a class to align text to the middle of the page */
+.centered-text {
+    text-align: center;
+}
+
+/* Making a class to align text to the left of the page */
+.lefted-text {
+    text-align: left;
+}
+
 h4 {
     font-size: 14px;
     text-align: center;
@@ -28,6 +38,11 @@ section > blockquote {
     line-height: 1.5;
 }
 
+/* Making a line spacing class */
+.spaced-lines {
+    line-height: 1.8;
+}
+
 /* Allowing the main character to appear bolded */
 #main-character {
     font-weight: 600;
@@ -43,16 +58,11 @@ section > blockquote {
     text-decoration: underline;
 }
 
-/* Creating a special format for the code format that looks more codey */
-code {
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 0.07em;
-}
-
 /* Formatting a box to surround all the text in these sections */
 section#description-section,
 section#facts-section,
-section#table-section {
+section#table-section,
+section#tesseract-section {
     background-color: rgb(139, 137, 151);
     width: 80%;
     margin-right: auto;
@@ -60,7 +70,9 @@ section#table-section {
 }
 
 /* Formatting the images in the description section with shadows, borders, and a max width and height */
-#description-section img {
+#description-section img,
+#tesseract-section img,
+#facts-section img {
     /*width: 100%;
     height: auto;*/
     max-width: 100%;
@@ -146,4 +158,16 @@ caption {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: inherit;
 }
