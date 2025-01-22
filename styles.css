@@ -1,0 +1,148 @@
+/* ./styles.css */
+
+/* Defining my main font, size, and color for the text */
+body {
+    background-color: #9695a1;
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding-bottom: 100px;
+}
+
+h4 {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Making sure h1 is centered */
+h1 {
+    text-align: center;
+    font-size: 74px;
+    font-family: Linotype Didot Pro Bold; /* the official font of the Interstellar main title */
+}
+
+/* Making the line separation different for paragraph text and blockquote text */
+section > p,
+section > blockquote {
+    line-height: 1.5;
+}
+
+/* Allowing the main character to appear bolded */
+#main-character {
+    font-weight: 600;
+}
+
+/* Allowing my favorite movie to be in italics */
+#favorite-movie {
+    font-style: italic;
+}
+
+/* Making a class to create underlined text */
+.underlined-text {
+    text-decoration: underline;
+}
+
+/* Creating a special format for the code format that looks more codey */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.07em;
+}
+
+/* Formatting a box to surround all the text in these sections */
+section#description-section,
+section#facts-section,
+section#table-section {
+    background-color: rgb(139, 137, 151);
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Formatting the images in the description section with shadows, borders, and a max width and height */
+#description-section img {
+    /*width: 100%;
+    height: auto;*/
+    max-width: 100%;
+    min-height: 120px;
+    box-shadow: 5px 5px rgba(45,45,47), -1em 0 .4em rgba(124,180,200);    
+    border-radius: 30px;
+}
+
+/* Creating a class to make my furthest right image stay at the right edge of the page */
+.align-right {
+    float: right;
+    margin-right: 9px;
+}
+
+/* Creating a class to make sure the furthest left image doesn't bleed its border over the edge of the box it's in */
+.align-left {
+    float: left;
+    margin-left: 16px;
+}
+
+/* Creating a class to make my lowest image stay in the middle of the page */
+.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Creating a class to ensure the images aren't too close together */
+.spaced-image {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Adding padding between the tops and bottoms of this section of the HTML page so it looks cleaner*/
+#table-section {
+    padding-bottom: 15px;
+    padding-top: 12px;
+}
+
+/* Making my table the right width and margin, adding margins to the top and bottom, and getting rid of the double borders that are default in tables in HTML */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Formatting the table's borders, padding, and text alignment */
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Formatting the table's header row */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Formatting the table's caption */
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Aligning back to top button at the bottom of the page */
+#back-to-top-section {
+    position: fixed; /* Ensures the button stays at the bottom */
+    bottom: 20px; /* Distance from the bottom of the page */
+    left: 50%; /* Moves the button to the middle horizontally */
+    transform: translateX(-50%); /* Centers the button perfectly */
+    text-align: center; /* Centers the content inside the button */
+    width: 100%; /* Makes the button span the full width of the page */
+}
+
+/* Styling for the button: making it the same font as the title of the page and making the border rounded */
+#back-to-top-section button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Linotype Didot Pro Bold;
+    background-color: #154367;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
